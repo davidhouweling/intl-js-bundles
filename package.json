@@ -1,0 +1,9 @@
+{
+  "name": "intl-js-bundles",
+  "version": "1.0.0",
+  "description": "Example of how to optimise JS bundles for varying internationalisation requirements",
+  "main": "index.js",
+  "repository": "git@github.com:davidhouweling/intl-js-bundles.git",
+  "author": "David Houweling <houweling@outlook.com>",
+  "license": "MIT"
+}
