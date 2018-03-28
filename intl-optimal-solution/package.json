@@ -1,0 +1,29 @@
+{
+  "name": "intl-optimal-solution",
+  "version": "1.0.0",
+  "description": "Example of how to optimise JS bundles for varying internationalisation requirements",
+  "main": "index.js",
+  "author": "David Houweling <houweling@outlook.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "webpack --mode production"
+  },
+  "dependencies": {
+    "moment": "^2.21.0",
+    "prop-types": "^15.6.1",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-intl": "^2.4.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "intl": "^1.2.5",
+    "uglifyjs-webpack-plugin": "^1.2.4",
+    "webpack": "^4.3.0",
+    "webpack-bundle-analyzer": "^2.11.1",
+    "webpack-cli": "^2.0.13"
+  }
+}
