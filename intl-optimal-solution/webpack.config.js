@@ -1,6 +1,7 @@
 const path = require('path');
 const webpack = require('webpack');
 const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
+const CompressionPlugin = require('compression-webpack-plugin');
 const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 
 module.exports = {
@@ -20,8 +21,9 @@ module.exports = {
   },
   plugins: [
     new UglifyJSPlugin(),
-    new webpack.IgnorePlugin(/^\.\/locale$/, /moment$/),
-    new BundleAnalyzerPlugin()
+    new webpack.ContextReplacementPlugin(/moment[/\\]locale$/, /en-gb|de|es|it|fr/),
+    new CompressionPlugin(),
+    // new BundleAnalyzerPlugin()
   ],
   module: {
     rules: [
